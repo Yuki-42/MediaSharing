@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/_base.css") }}">
+    {% block stylesheets %}{% endblock %}
+    <script src="{{ url_for("static", filename="js/_base.js") }}"></script>
+    {% block scripts %}{% endblock %}
+
+</head>
+<body>
+    <header>
+        <div class="navbar" id="navbar">
+            <a href="{{ url_for("index") }}"><img src="{{ url_for("static", filename="images/temp.png") }}" alt="logo" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for("index") }}">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <div class="footer">
+            <p>&copy; 2021 - All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

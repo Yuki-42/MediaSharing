@@ -1,0 +1,126 @@
+html body {
+    margin: 0;
+    background: #f1f1f1;
+}
+
+* {
+    color: black;
+    font-family: "Segoe UI", "Segoe", Tahoma, Helvetica, Arial, sans-serif;
+}
+
+header {
+    background: #034320;
+}
+
+header img {
+    max-width: 100px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header h1 {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 2%;
+    font-size: 20px;
+    color: white;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 13%;
+    vertical-align: center;
+}
+
+nav a {
+    transition: all 0.2s ease-in-out;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    color: #00FF00;
+    border-bottom: 2px solid #00FF00;
+}
+
+footer {
+    width: 100%;
+    padding: 5px 0;
+    background: #dbb700;
+    margin-top: 1vh;
+}
+
+.horizontalCentre {
+    text-align: center;
+}
+
+.verticalCenter {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    padding: 5px 0;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 62.4vh;
+}
+
+.footer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer h5 {
+    text-align: center;
+    margin: 2vh -1vh 0 0;
+}
+
+.footerContact {
+    display: inline;
+    margin: 0 auto;
+    min-height: 10vh;
+}
+
+.footerContact p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.footerLinks {
+    display: inline;
+    margin: 0 auto;
+    min-height: 10vh;
+}
